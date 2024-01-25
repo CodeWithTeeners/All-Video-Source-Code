@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*,
+*::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .all-input {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .form-input {
+    flex: 1;
+    text-align: left;
+  }
+  
+  label {
+    font-size: 14px;
+    color: hsl(0, 0%, 44%);
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    outline: none;
+  }
+
+  input:active,input:focus{
+    border: 1px solid hsl(259, 100%, 65%);
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid hsl(0, 0%, 86%);
+    margin: 20px 0;
+  }
+  
+  button {
+    background-color: hsl(259, 100%, 65%);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: black;
+  }
+  
+  .result-box {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .result-data {
+    font-size: 68px;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 80px;
+  }
+  
+  .result-data span {
+    font-weight: 900;
+    color: hsl(259, 100%, 65%);
+  }
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: left;
+  }
+  
