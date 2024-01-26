@@ -1,0 +1,92 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.card {
+  background: linear-gradient(to right, #3498db, #2980b9);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card:active {
+  box-shadow: none;
+}
+
+.card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 4px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+img:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+img[alt="Image"] {
+  position: relative;
+}
+
+img[alt="Image"]:after {
+  content: attr(alt);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff; /* Set the text color */
+  font-size: 16px; /* Set the font size */
+}
+
+input {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+  background: linear-gradient(to right, #3498db, #2980b9);
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 18px;
+}
+
+label:hover {
+  background: linear-gradient(to right, #2980b9, #1f6692);
+}
+.remove-button {
+  background: linear-gradient(to right, #e74c3c, #c0392b);
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.remove-button:hover {
+  background: linear-gradient(to right, #c0392b, #a93226);
+}
