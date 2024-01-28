@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*,
+*::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.search-box {
+  width: 50vw;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  margin-top: 50px;
+}
+
+input {
+  padding: 10px;
+  margin-right: 10px;
+  width: 100%;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  transition: border-color 0.3s ease-in-out;
+  outline: none;
+  border: none;
+  font-size: 16px;
+}
+
+input:focus {
+  border-color: #007bff;
+}
+
+button {
+  padding: 10px 20px;
+  background: linear-gradient(to right, #007bff, #004080);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+button:hover {
+  background: linear-gradient(to right, #004080, #001a40);
+}
+
+
+@media (max-width: 1080px) {
+  .search-box {
+    width: 60vw;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  button {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-box {
+    width: 95vw;
+    margin: 30px;
+  }
+  
+  input {
+    width: 100%;
+    font-size: 14px;
+  }
+  
+  button {
+    padding: 4px 10px;
+    font-size: 14px;
+  }
+}
+
+
+#userInfo {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  max-width: 400px;
+  width: 100%;
+}
+
+img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.name-and-date {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h4 {
+  margin: 5px 0;
+  color: #333;
+}
+
+p {
+  margin: 5px 0;
+  color: #777;
+}
+
+p.bio {
+  font-weight: bold;
+  color: #555;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
