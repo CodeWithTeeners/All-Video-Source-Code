@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Rock, Paper, Scissors</h1>
+    <div class="container">
+      <p>
+        Choose between rock, paper, or scissors and test your luck against the
+        computer!
+      </p>
+      <p>
+        <strong>Keep in mind:</strong> “Rock smashes scissors, scissors cuts
+        paper, paper covers rock.”
+      </p>
+
+      <div class="score">
+        Player: <span id="player-score">0</span> Computer:
+        <span id="computer-score">0</span>
+      </div>
+      <div class="buttons">
+        <a href="#popup-box" data-choice="Rock" class="gameFeatures">
+          <i class="fas fa-hand-rock"></i> Rock
+        </a>
+        <a data-choice="Paper" href="#popup-box" class="gameFeatures">
+          <i class="fas fa-hand-paper"></i> Paper
+        </a>
+        <a data-choice="Scissors" href="#popup-box" class="gameFeatures">
+          <i class="fas fa-hand-scissors"></i> Scissors
+        </a>
+      </div>
+    </div>
+    <div id="popup-box" class="modal">
+      <div class="content">
+        <h1 style="color: green" class="message"></h1>
+        <a href="#" class="box-close" onclick="closePopup()"> × </a>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
